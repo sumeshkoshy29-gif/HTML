@@ -1,0 +1,84 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Enter a String</td>
+            <td><input type="text" name="" id="string" placeholder="enter a string"></td>
+            <br>
+        </tr>
+        <tr>
+            <td>Enter a Number</td>
+            <td><input type="text" name="" id="number" placeholder="enter a number"></td>
+        </tr>
+        <tr>
+            <td>Enter Power</td>
+            <td><input type="text" name="" id="power" placeholder="enter the power"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" id="result" value="Get Result"></td>
+        </tr>
+        <tr>
+            <td>Slice String</td>
+            <td><input type="text" name="" id="slice"></td>
+        </tr>
+        <tr>
+            <td>Length of the String</td>
+            <td><input type="text" name="" id="len"></td>
+        </tr>
+        <tr>
+            <td>Power of Number</td>
+            <td><input type="text" name="" id="pow"></td>
+        </tr>
+        <tr>
+            <td>Square root of Number</td>
+            <td><input type="text" name="" id="sqrt"></td>
+        </tr>
+        <tr>
+            <td>Ceil of Number</td>
+            <td><input type="text" name="" id="ceil"></td>
+        </tr>
+        <tr>
+            <td>Floor of Number</td>
+            <td><input type="text" name="" id="floor"></td>
+        </tr>
+     
+    </table>
+    <script>
+        document.getElementById("result").addEventListener("click",()=>{
+            const String = document.getElementById("string").value
+            const Number = document.getElementById("number").value
+            const Power = document.getElementById("power").value
+        
+            // calculate Power
+            PowerResult = Number ** Power
+            // calculate square root
+            sqrtResult = Math.sqrt(Number)
+            // ceil
+              numCeil = Math.ceil(Number)
+            // floor
+                numFloor = Math.floor(Number)
+            // slice
+
+            sliceNum = String.slice(0,1)
+
+            // adding length of the string to input box
+            document.getElementById("len").value = String.length
+            // adding power of number to input box
+            document.getElementById("pow").value = PowerResult
+            document.getElementById("sqrt").value = sqrtResult
+            document.getElementById("ceil").value = numCeil
+            document.getElementById("floor").value = numFloor
+            document.getElementById("slice").value = sliceNum
+        })
+      
+        
+    </script>
+</body>
+</html>
